@@ -62,21 +62,15 @@ body{
 	margin-left: 20px;
 }
 
-.logo-container{
+/* .logo-container{
 	position: relative;
 	margin-top: 50px;
-}
+} */
 
 .site-title{
-	position: absolute;
-	padding: 30px;
-	z-index: 10;
-	/* margin: 80px 0; */
+	margin: 80px 0;
 	text-align: center;
 	color: #464646;
-	transform: translate(-50%, 100%);
-	background-color: rgba(255, 255, 255, 0.6);
-	left: 50%;
 }
 
 .title-logo{
@@ -93,17 +87,13 @@ body{
 }
 
 .img-bgc{
-	position: absolute;
 	background-color: #fff;
-	transform: translate(50%, 100%);
-	right: 50%;
-	bottom: 100%;
 }
 
 .main-img{
 	padding: 15px;
-	position: relative;
 	/* imagen anterior https://images.unsplash.com/photo-1586264511771-da5e40b3bba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 */
+	/* imagen anterior 2 https://images.unsplash.com/photo-1536443527011-81700919d4c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80 */
 }
 
 .main-img img{
@@ -114,12 +104,7 @@ body{
 
 .main-img::after{
 	content: '';
-	z-index: 3;
-	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
-	left: 0;
-	top: 0;
+	background-color: rgba(0, 0, 0, 0.4);
 }
-
