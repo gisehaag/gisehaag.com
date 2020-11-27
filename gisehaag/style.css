@@ -1,5 +1,125 @@
 /*
-Theme Name: Gise Haag Theme
-Author: Gise Haag
+Theme name:          Gise Haag Theme
+Version:             1.0
+Description:         Theme creado para mi sitio web.
+Author:              Gise Haag
+Author URI:          http://gisehaag.com/
+License:             GNU General Public License v2 or later
+License URI:         http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
+
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #f0f0f0;
+}
+
+.header-bgc{
+	background-color: #f6f6f6;
+}
+
+.header-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-container ul{
+	display: flex;
+	padding: 0;
+}
+
+.header-container li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-container a{
+	text-decoration: none;
+}
+
+.header-container a:hover{
+	color: rgb(201, 161, 110);
+}
+
+.box-width{
+	max-width: 1170px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.main-menu a{
+	color: #222222;
+	margin-right: 30px;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 1.65px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.social-menu a{
+	color: #464646;
+	margin-left: 20px;
+}
+
+.logo-container{
+	position: relative;
+	margin-top: 50px;
+}
+
+.site-title{
+	position: absolute;
+	padding: 30px;
+	z-index: 10;
+	/* margin: 80px 0; */
+	text-align: center;
+	color: #464646;
+	transform: translate(-50%, 100%);
+	background-color: rgba(255, 255, 255, 0.6);
+	left: 50%;
+}
+
+.title-logo{
+	margin: 0;
+	font-size: 50px;
+	font-family: 'Charmonman', cursive;
+	letter-spacing: 1.85px;
+}
+
+.subtitle-logo{
+	font-size: 10px;
+	letter-spacing: .75px;
+	text-transform: uppercase;
+}
+
+.img-bgc{
+	position: absolute;
+	background-color: #fff;
+	transform: translate(50%, 100%);
+	right: 50%;
+	bottom: 100%;
+}
+
+.main-img{
+	padding: 15px;
+	position: relative;
+	/* imagen anterior https://images.unsplash.com/photo-1586264511771-da5e40b3bba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 */
+}
+
+.main-img img{
+	width: 100%;
+	/* height: 400px;
+	object-fit: cover; */
+}
+
+.main-img::after{
+	content: '';
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	left: 0;
+	top: 0;
+}
 
