@@ -6,7 +6,7 @@
 		</div>
 		<div class="box-width img-bgc">
 			<div class="main-img">
-				<img  src="https://scontent-mad1-1.cdninstagram.com/v/t51.2885-15/e35/47585739_2137268623253414_1639102644497674294_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=McB2SueSkVUAX8bi-jK&tp=1&oh=0f36d0fd9c3b431cb76881e62ef08290&oe=5FE99DC4" alt="">
+				<img  src="https://cdn.pixabay.com/photo/2016/07/31/11/52/table-1558811_1280.jpg" alt="">
 			</div>
 		</div>
 	</section>
