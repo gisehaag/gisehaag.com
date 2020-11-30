@@ -7,14 +7,14 @@
 </head>
 
 <body>
-	<header class="header-bgc">
+	<header class="header-footer-bgc">
 		<div class="header-container box-width">
 			<div class="main-menu">
 					<ul>
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">BLOG</a></li>
-						<li><a href="#">SOBRE MI</a></li>
-						<li><a href="#">CONTACTAME</a></li>
+						<li><a class="uppercase-text" href="#">home</a></li>
+						<li><a class="uppercase-text" href="#">blog</a></li>
+						<li><a class="uppercase-text" href="#">sobre mi</a></li>
+						<li><a class="uppercase-text" href="#">contactame</a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
