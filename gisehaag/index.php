@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 	<section>
-		<div class="site-title">
-			<h1 class="title-logo">gisehaag</h1>
-			<p class="subtitle-logo uppercase-text">__un subtitulo muy copado va acá__</p>
-		</div>
+		<a href="gisehaag.com">
+			<div class="site-title">
+				<h1 class="title-logo">gisehaag</h1>
+				<p class="subtitle-logo uppercase-text">__un subtitulo muy copado va acá__</p>
+			</div>
+		</a>
 		<div class="box-width img-bgc">
 			<div class="main-img">
 				<img  src="https://cdn.pixabay.com/photo/2016/07/31/11/52/table-1558811_1280.jpg" alt="">
@@ -19,13 +21,13 @@
 				</div>
 			</a>
 
-			<a class="link-box" href="#">
+			<a class="link-box" href="http://projects.gisehaag.com/">
 				<div class="box-image">
 					<img src="https://cdn.pixabay.com/photo/2017/02/15/16/16/converse-2069209_1280.jpg" alt="">
-					<h2 class="uppercase-text">sobre mi</h2>
+					<h2 class="uppercase-text">training projects</h2>
 				</div>
 			</a>
-			<a class="link-box" href="#">
+			<a class="link-box" href="#contact-me">
 				<div class="box-image">
 					<img src="https://cdn.pixabay.com/photo/2015/04/24/18/04/stamps-738059_1280.jpg" alt="">
 					<h2 class="uppercase-text">contactame</h2>
@@ -52,7 +54,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="box-about-me white-box">
+			<div class="box-about-me white-box" id="about-me">
 				<h1 class="about-me-title uppercase-text">
 					sobre mi
 				</h1>
