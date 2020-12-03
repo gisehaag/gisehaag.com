@@ -1,29 +1,5 @@
 <div class="blog-article">
 	<?php while (have_posts()) : the_post(); ?>
-		<?php if (is_front_page()) : ?>
-
-			<article>
-				<?php the_content(); ?>
-			</article>
-
-		<?php else : ?>
-
-			<article class="white-box">
-				<p class="post-category uppercase-text">
-					<?php the_category(); ?>
-				</p>
-				<h1 class="post-title uppercase-text">
-					<?php the_title(); ?>
-				</h1>
-				<p class="post-meta">
-					<span><i class="fas fa-user"></i> <?php the_author(); ?> </span><span id="separator">/</span><span><i class="fas fa-calendar-day"></i><?php echo get_the_date(); ?></span>
-				</p>
-				<?php the_post_thumbnail('large', array('class' => 'post-image', 'alt' => get_the_title())); ?>
-				<div class="post-content">
-					<?php the_excerpt(); ?>
-				</div>
-			</article>
-
-		<?php endif; ?>
+		<?php get_template_part('template-parts/main-loop'); ?>
 	<?php endwhile; ?>
 </div>
