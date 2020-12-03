@@ -30,3 +30,8 @@ function assets(){
 }
 
 add_action('wp_enqueue_scripts', 'assets');
+
+/* locate_template como un require pero con posibilidad de buscar en un tema padre si así lo necesitaría.
+El segundo parámetro es si lo encuentra, carga el shortcode */
+
+locate_template('inc/shortcodes.php', true);
