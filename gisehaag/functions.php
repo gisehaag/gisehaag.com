@@ -1,9 +1,10 @@
 <?php
 
-function init_template(){
-	add_theme_support('post-thumbnails');
+function init_template()
+{
+   add_theme_support('post-thumbnails');
 
-	register_nav_menus(
+   register_nav_menus(
       array(
          'primary' => 'Main menu',
       )
@@ -12,7 +13,8 @@ function init_template(){
 
 add_action('init', 'init_template');
 
-function assets(){
+function assets()
+{
 
    wp_register_style('lato', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap', '1.0', 'all');
 
@@ -25,8 +27,7 @@ function assets(){
 
    wp_enqueue_style('estilos', get_stylesheet_uri(), array('lato', 'monserrat', 'charmonman', 'fontawsome'), '1.0', 'all');
 
-   wp_enqueue_script( 'custom', get_template_directory_uri().'/assets/js/custom.js', '', '1.0', true);
-
+   wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js', '', '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'assets');
@@ -35,3 +36,10 @@ add_action('wp_enqueue_scripts', 'assets');
 El segundo parámetro es si lo encuentra, carga el shortcode */
 
 locate_template('inc/shortcodes.php', true);
+
+function excerpt_read_more_link($output) {
+   global $post;
+   $output = '<a class="read-more" href="' . get_permalink($post->ID) . '">Leer más</a>';
+  return $output;
+}
+add_filter('excerpt_more', 'excerpt_read_more_link');
