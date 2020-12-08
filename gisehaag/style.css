@@ -375,6 +375,7 @@ li {
 	border: 1px solid transparent;
 	border-bottom-color: #c9a16e;
 	font-style: italic;
+	width: 75%;
 }
 
 .contact-input:focus {
@@ -391,6 +392,8 @@ input[type='submit' i] {
 	font-weight: 600;
 	color: #643907;
 	cursor: pointer;
+	width: 50%;
+	/* margin: 1rem auto; */
 }
 
 input[type='submit' i]:focus {
@@ -400,6 +403,11 @@ input[type='submit' i]:focus {
 [class^='wpcf7-not'],
 [class^='wpcf7-resp'] {
 	font-size: 12px;
+	text-align: center;
+}
+
+.wpcf7 p {
+	margin: 1rem auto;
 	text-align: center;
 }
 

@@ -1,6 +1,6 @@
 <div class="box-sidebar white-box">
 	<h1 class="title uppercase-text monserrat-font">
-	Ponete en contacto conmigo 😊
+	Ponete en contacto conmigo😊
 	</h1>
 	<div class="sidebar-wrapper">
 		<ul class="sidebar-list">
