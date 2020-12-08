@@ -7,7 +7,7 @@
 		<?php else : ?>
 
 			<article class="white-box">
-				<h1 class="post-title uppercase-text">
+				<h1 class="title uppercase-text monserrat-font">
 					<?php the_title(); ?>
 				</h1>
 				<div class="post-content">
