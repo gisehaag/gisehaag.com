@@ -6,9 +6,9 @@
 		<?php get_sidebar(); ?>
 	</div>
 
-	<div class="box-width flex-navegation">
+	<div class="box-width flex-navigation">
 		<?php if(is_single()) : ?>
-			<?php get_template_part('template-parts/post-navegation'); ?>
+			<?php get_template_part('template-parts/post-navigation'); ?>
 		<?php endif; ?>
 	</div>
 </main>
