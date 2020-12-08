@@ -5,6 +5,12 @@
 		<?php get_template_part('template-parts/main'); ?>
 		<?php get_sidebar(); ?>
 	</div>
+
+	<div class="box-width flex-navegation">
+		<?php if(is_single()) : ?>
+			<?php get_template_part('template-parts/post-navegation'); ?>
+		<?php endif; ?>
+	</div>
 </main>
 
 <?php get_footer(); ?>
