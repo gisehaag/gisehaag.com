@@ -13,7 +13,7 @@
 					<ul>
 						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
 						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>">blog</a></li>
-						<li><a class="uppercase-text" href="http://projects.gisehaag.com/">training projects</a></li>
+						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank">training projects</a></li>
 						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>">contactame</a></li>
 					</ul>
 			</div>
@@ -51,7 +51,7 @@
 					</div>
 				</a>
 
-				<a class="link-box" href="https://projects.gisehaag.com/">
+				<a class="link-box" href="https://projects.gisehaag.com/" target="_blank">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2017/02/15/16/16/converse-2069209_1280.jpg" alt="">
 						<h2 class="uppercase-text">training projects</h2>
