@@ -6,7 +6,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<header class="header-footer-bgc">
 		<div class="header-container box-width">
 			<div class="main-menu">

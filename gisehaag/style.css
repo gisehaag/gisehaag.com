@@ -441,6 +441,10 @@ input[type='submit' i]:focus {
 		width: 90vw;
 	}
 
+	.no-menu-on-mobile .main-menu {
+		display: none;
+	}
+
 	.site-title {
 		margin: 50px 0;
 	}
