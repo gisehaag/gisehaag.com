@@ -11,10 +11,9 @@
 		<div class="header-container box-width">
 			<div class="main-menu">
 					<ul>
-						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
-						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>">blog</a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/blog' ); ?>">blog</a></li>
 						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank">training projects</a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>">contactame</a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/contact' ); ?>">contactame</a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
@@ -41,10 +40,10 @@
 		</div>
 	</section>
 
-	<?php if(is_front_page()): ?>
+	<?php if ( is_front_page() ) : ?>
 		<section>
 			<div class="flex box-width">
-				<a class="link-box" href="<?php echo home_url('/blog'); ?>">
+				<a class="link-box" href="<?php echo home_url( '/blog' ); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/09/20/02/03/sunglasses-947892_1280.jpg" alt="">
 						<h2 class="uppercase-text">blog</h2>
@@ -57,7 +56,7 @@
 						<h2 class="uppercase-text">training projects</h2>
 					</div>
 				</a>
-				<a class="link-box" href="<?php echo home_url('/contact'); ?>">
+				<a class="link-box" href="<?php echo home_url( '/contact' ); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/04/24/18/04/stamps-738059_1280.jpg" alt="">
 						<h2 class="uppercase-text">contactame</h2>

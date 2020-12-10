@@ -1,6 +1,7 @@
 <div class="blog-article">
-	<?php while (have_posts()) : the_post(); ?>
-		<?php if (is_front_page()) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+
+		<?php if ( is_front_page() ) : ?>
 
 			<?php the_content(); ?>
 
@@ -16,5 +17,6 @@
 			</article>
 
 		<?php endif; ?>
+
 	<?php endwhile; ?>
 </div>
