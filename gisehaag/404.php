@@ -3,8 +3,8 @@
 <main>
 	<div class="flex box-width post-section white-box">
 		<h1 class="title uppercase-text monserrat-font">
-			La página no existe, volvé haciendo
-			<a href="<?php echo home_url(); ?>">click acá 😉</a>
+			<?php _e('La página no existe, volvé haciendo', 'gisehaag'); ?>
+			<a href="<?php echo home_url(); ?>"><?php _e('click acá 😉'); ?></a>
 		</h1>
 	</div>
 </main>

@@ -47,20 +47,20 @@
 				<a class="link-box" href="<?php echo home_url('/blog'); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/09/20/02/03/sunglasses-947892_1280.jpg" alt="">
-						<h2 class="uppercase-text">blog</h2>
+						<h2 class="uppercase-text"><?php _e('blog', 'gisehaag'); ?></h2>
 					</div>
 				</a>
 
 				<a class="link-box" href="https://projects.gisehaag.com/" target="_blank">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2017/02/15/16/16/converse-2069209_1280.jpg" alt="">
-						<h2 class="uppercase-text">training projects</h2>
+						<h2 class="uppercase-text"><?php _e('training projects', 'gisehaag'); ?></h2>
 					</div>
 				</a>
 				<a class="link-box" href="<?php echo home_url('/contact'); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/04/24/18/04/stamps-738059_1280.jpg" alt="">
-						<h2 class="uppercase-text">contactame</h2>
+						<h2 class="uppercase-text"><?php _e('contactame', 'gisehaag'); ?></h2>
 					</div>
 				</a>
 			</div>
