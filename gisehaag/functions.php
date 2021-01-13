@@ -35,6 +35,8 @@ El segundo parámetro es si lo encuentra, carga el shortcode */
 
 locate_template('inc/shortcodes.php', true);
 
+locate_template('inc/sidebars.php', true);
+
 function gh_excerpt_read_more_link($output) {
    global $post;
    $output = '<a class="read-more" href="' . get_permalink($post->ID) . '">Leer más</a>';

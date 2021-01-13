@@ -3,6 +3,7 @@ Theme name:          Gise Haag Theme
 Version:             1.0
 Description:         Theme creado para mi sitio web.
 Author:              Gise Haag
+Text Domain:         gisehaag
 Author URI:          http://gisehaag.com/
 License:             GNU General Public License v2 or later
 License URI:         http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -213,6 +214,7 @@ li {
 .white-box {
 	background-color: #fff;
 	padding: 0.1px 1rem;
+	padding-bottom: 10px;
 	color: #444444;
 	margin-bottom: 30px;
 }
@@ -328,6 +330,11 @@ li {
 	letter-spacing: 0.5px;
 	font-size: 12px;
 	color: #444;
+}
+
+#sidebar {
+	padding: 0;
+	margin: 0;
 }
 
 .box-sidebar {
@@ -463,7 +470,7 @@ input[type='submit' i]:focus {
 		margin-bottom: 20px;
 	}
 
-	.sidebar-wrapper {
+	.sidebar-content {
 		display: flex;
 		justify-content: center;
 	}
@@ -476,6 +483,7 @@ input[type='submit' i]:focus {
 
 	.bio {
 		width: 65%;
+		text-align: left;
 	}
 
 	.blog-article {
