@@ -12,9 +12,9 @@
 			<div class="main-menu">
 					<ul>
 						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
-						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>">blog</a></li>
-						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank">training projects</a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>">contactame</a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>"><?php _e('blog', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank"><?php _e('training projects', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>"><?php _e('contactame', 'gisehaag'); ?></a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
@@ -30,8 +30,8 @@
 	<section>
 		<a href="<?php echo home_url(); ?>">
 			<div class="site-title">
-				<h1 class="title-logo">gisehaag</h1>
-				<p class="subtitle-logo uppercase-text">__un subtitulo muy copado va acá__</p>
+				<h1 class="title-logo"><?php _e('gisehaag', 'gisehaag'); ?></h1>
+				<p class="subtitle-logo uppercase-text"><?php _e('__un subtitulo muy copado va acá__', 'gisehaag'); ?></p>
 			</div>
 		</a>
 		<div class="box-width img-bgc">
