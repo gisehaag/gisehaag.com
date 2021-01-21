@@ -514,14 +514,6 @@ input[type='submit' i]:focus {
 		margin-bottom: 15px;
 	}
 
-	.post-section {
-		flex-direction: column-reverse;
-	}
-
-	.box-sidebar {
-		margin-bottom: 30px;
-	}
-
 	.contact-me {
 		width: 90vw;
 		margin-right: 0;
