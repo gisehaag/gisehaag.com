@@ -2,7 +2,7 @@
 
 <main>
 	<div class="flex box-width post-section">
-		<?php get_template_part('template-parts/main'); ?>
+		<?php get_template_part( 'template-parts/main' ); ?>
 		<?php get_sidebar(); ?>
 	</div>
 
