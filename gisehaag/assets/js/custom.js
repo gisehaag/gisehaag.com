@@ -33,8 +33,13 @@ function nameTechnologies() {
 	}
 }
 
+function closeMoreInfoBox() {
+	Array.from(document.querySelectorAll('.icon-chevron-up')).forEach(element => element.click());
+}
+
 function displayDetails(event) {
 	nameTechnologies();
+	closeMoreInfoBox();
 
 	let moreInfoButton = event.currentTarget;
 	let projectBox = moreInfoButton.closest('.project-item');
@@ -77,8 +82,8 @@ function displayDetails(event) {
 		<div class="wrapper">
 			<p class="date">${projectName.date}</p>
 			<div class="icons">${icons}</div>
-			<div class="inspiration">${inspiration}</div>
 			<ul class="desciptionList">${descriptionList}</ul>
+			<div class="inspiration">${inspiration}</div>
 		</div>`
 
 		let hideInfoButton = document.createElement('span');

@@ -36,16 +36,14 @@ get_header('projects'); ?>
 				<?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
 					<div class="project-item" data-name="<?php echo $post->post_name ?>">
 						<a href="<?php echo get_field('project_url'); ?>" target="_blank">
-							<div class="project-tile">
-								<img
-									class="project-img"
-									src="<?php echo get_field('image'); ?>"
-									alt="<?php echo get_field('image_alt'); ?>"
-								/>
-							</div>
+							<img
+								class="project-img"
+								src="<?php echo get_field('image'); ?>"
+								alt="<?php echo get_field('image_alt'); ?>"
+							/>
 						</a>
-						<h1 class="project-title"><?php the_title(); ?></h1>
-						<div class="icon-chevron-down"></div>
+						<h1 class="project-title"> <span class="icon-chevron-down"></span> <?php the_title(); ?></h1>
+						<div class="details-project"></div>
 					</div>
 				<?php endwhile; ?>
 			</div>
