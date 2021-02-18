@@ -16,18 +16,25 @@ $projects = new WP_Query($args);
 get_header('projects'); ?>
 
 <main id="main">
-	<div class="logo">
-		<h1>gisehaag</h1>
-		<p>a web developer girl in develop</p>
-	</div>
+	<header id="logo">
+		<div class="background">
+			<div class="logo-wrapper">
+				<h1>Hello World 🌎</h1>
+				<p>I'm Gise Haag, a web developer in develop</p>
+			</div>
+		</div>
+	</header>
 
-	<section class="container" id="projects">
-		<h1 class="projects-title">These are some of my projects</h1>
-
+	<section id="projects">
+		<div class="background">
+			<div class="projects-title">
+				<h1>these are some of my projects</h1>
+			</div>
+		</div>
 		<?php if( $projects->have_posts() ): ?>
 			<div class="projects">
 				<?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
-					<div class="project-item" data-name="<?php echo the_title(); ?>">
+					<div class="project-item" data-name="<?php echo $post->post_name ?>">
 						<a href="<?php echo get_field('project_url'); ?>" target="_blank">
 							<div class="project-tile">
 								<img
@@ -37,26 +44,15 @@ get_header('projects'); ?>
 								/>
 							</div>
 						</a>
-						<h1 class="project-title"><?php echo get_field('title'); ?></h1>
+						<h1 class="project-title"><?php the_title(); ?></h1>
 						<div class="icon-chevron-down"></div>
 					</div>
-
 				<?php endwhile; ?>
 			</div>
 		<?php endif; ?>
-
-	</section>
+		</section>
 </main>
 
-
-
-
-
-<!-- <main>
-	<div class="flex box-width post-section">
-		<?php get_template_part('template-parts/page'); ?>
-	</div>
-</main> -->
 
 <?php get_footer(); ?>
 

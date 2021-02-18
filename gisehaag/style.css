@@ -9,11 +9,26 @@ License:             GNU General Public License v2 or later
 License URI:         http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,400;1,500&display=swap');
 
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #f0f0f0;
 	font-size: 16px;
+}
+
+body.logged-in.admin-bar {
+	min-height: calc(100vh - 35px);
+}
+
+body.page-template-page-templatesprojects-php {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main#main {
+	flex-grow: 1;
 }
 
 * {
@@ -448,6 +463,7 @@ input[type='submit' i]:focus {
 .page-template-projects {
 	margin: 0;
 	background-color: #000;
+	font-family: 'Livvic', sans-serif;
 	opacity: 0.9;
 	background-image: radial-gradient(#ff3788 0.8px, transparent 0.8px), radial-gradient(#ff3788 0.8px, #000 0.8px);
 	background-size: 25px 25px;
@@ -460,7 +476,6 @@ input[type='submit' i]:focus {
 }
 
 .page-template-projects .header-footer-bgc a {
-	font-family: 'Corben', cursive;
 	color: #fff;
 }
 
@@ -468,45 +483,53 @@ input[type='submit' i]:focus {
 	color: #ff3788;
 }
 
-.page-template-projects .logo {
+#logo .background {
 	background-color: #ff3788;
-	text-align: center;
-	padding: 50px 0;
+	padding: 70px 0;
 }
 
-.page-template-projects .logo h1 {
+.page-template-projects .logo-wrapper,
+.page-template-projects .projects-title,
+.page-template-projects .projects {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.page-template-projects .logo-wrapper h1 {
 	margin: 0;
 	font-size: 4em;
-	font-family: 'Corben', cursive;
-	font-weight: 700;
+	font-weight: 900;
 }
 
-.page-template-projects .logo p {
+.page-template-projects .logo-wrapper p {
 	margin: 0;
-	color: white;
-	text-align: center;
-	font-family: 'Corben', cursive;
-	font-weight: 700;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 
 .page-template-projects .projects {
 	column-count: 3;
 	column-gap: 40px;
-	width: 85vw;
-	margin: 0 auto;
+}
+
+#projects .background {
+	background-color: #000;
+	margin-bottom: 50px;
+	border-bottom: 3px solid #fd5298;
 }
 
 .page-template-projects .projects-title {
-	margin-top: 0;
-	font-family: 'Corben', cursive;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.page-template-projects .projects-title h1 {
+	margin: 0;
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 4em;
-	text-align: center;
-	background-color: #000;
 	color: #fff;
-	margin-bottom: 50px;
-	border-bottom: 3px solid #fd5298;
 }
 
 .page-template-projects .project-item {
@@ -526,7 +549,6 @@ input[type='submit' i]:focus {
 
 .page-template-projects .project-title {
 	margin: 0;
-	font-family: 'Corben', cursive;
 	font-weight: 400;
 	font-size: 0.8rem;
 	line-height: 3em;
@@ -554,9 +576,6 @@ input[type='submit' i]:focus {
 
 .page-template-projects .footer-content {
 	color: #fff;
-	font-weight: 700;
-	font-family: 'Corben', cursive;
-	font-style: normal;
 }
 
 .page-template-projects .project-img {
@@ -573,12 +592,12 @@ input[type='submit' i]:focus {
 	z-index: 0;
 	max-height: 0;
 	overflow: hidden;
-	transition: all 1s ease;
+	transition: all 0.6s ease;
 }
 
 .more-info .wrapper {
 	border-top: 1px solid #a1dd70;
-	padding: 10px 15px 10px 30px;
+	padding: 10px 20px;
 }
 
 .date {
@@ -635,6 +654,21 @@ input[type='submit' i]:focus {
 	color: gray;
 	z-index: 5;
 	white-space: nowrap;
+}
+
+.desciptionList {
+	padding-left: 15px;
+}
+
+.desciptionList li {
+	list-style: disc;
+}
+
+@media screen and (max-width: 940px) {
+	.page-template-projects .projects {
+		column-count: 2;
+		column-gap: 10px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -737,6 +771,16 @@ input[type='submit' i]:focus {
 
 	.empty-box {
 		display: none;
+	}
+
+	.page-template-projects .projects-title h1 {
+		padding: 25px 0;
+		line-height: 1em;
+	}
+
+	.page-template-projects .projects {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
