@@ -1,9 +1,9 @@
 <?php $listElements = get_field('list'); ?>
 
-<section id="projects">
+<section id="section">
 	<?php if(get_field('title')) : ?>
 		<div class="background">
-			<div class="projects-title">
+			<div class="subtitle">
 				<h1><?php the_field('title'); ?></h1>
 			</div>
 		</div>

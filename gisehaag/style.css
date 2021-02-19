@@ -509,25 +509,25 @@ input[type='submit' i]:focus {
 	color: #ff3788;
 }
 
-#logo .background {
+#pink .background {
 	background-color: #ff3788;
 	padding: 70px 0;
 }
 
-.page-template-dark .logo-wrapper,
-.page-template-dark .projects-title,
+.page-template-dark .pink-wrapper,
+.page-template-dark .subtitle,
 .page-template-dark .projects {
 	width: 80vw;
 	margin: 0 auto;
 }
 
-.page-template-dark .logo-wrapper h1 {
+.page-template-dark .pink-wrapper h1 {
 	margin: 0;
 	font-size: 4em;
 	font-weight: 900;
 }
 
-.page-template-dark .logo-wrapper p {
+.page-template-dark .pink-wrapper p {
 	margin: 0;
 	color: #fff;
 	font-size: 1.3rem;
@@ -545,18 +545,19 @@ input[type='submit' i]:focus {
 	align-items: stretch;
 }
 
+#section .background,
 #projects .background {
 	background-color: #000;
 	margin-bottom: 50px;
 	border-bottom: 3px solid #fd5298;
 }
 
-.page-template-dark .projects-title {
+.page-template-dark .subtitle {
 	width: 80vw;
 	margin: 0 auto;
 }
 
-.page-template-dark .projects-title h1 {
+.page-template-dark .subtitle h1 {
 	margin: 0;
 	font-weight: 700;
 	font-size: 2rem;
@@ -740,13 +741,16 @@ input[type='submit' i]:focus {
 }
 
 .wp-block-group__inner-container {
-	width: 90%;
+	width: 100%;
 }
 
 .wp-block-group__inner-container p {
 	margin: 0;
 	margin-bottom: 1.2rem;
-	line-height: 1.2rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background-color: #000;
 }
 
 .wp-block-group__inner-container p:last-child {
@@ -774,7 +778,8 @@ input[type='submit' i]:focus {
 }
 
 .info-about-me > .wp-block-group__inner-container .wp-block-group {
-	width: 80%;
+	width: 100%;
+   padding: 0 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -879,7 +884,7 @@ input[type='submit' i]:focus {
 		display: none;
 	}
 
-	.page-template-dark .projects-title h1 {
+	.page-template-dark .subtitle h1 {
 		padding: 25px 0;
 		line-height: 1em;
 	}
