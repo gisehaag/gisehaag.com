@@ -105,3 +105,5 @@ function gh_getProjects() {
 
 add_action('wp_ajax_nopriv_gh_getProjects', 'gh_getProjects');
 add_action('wp_ajax_gh_getProjects', 'gh_getProjects');
+
+

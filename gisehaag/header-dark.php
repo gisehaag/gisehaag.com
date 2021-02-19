@@ -24,10 +24,9 @@
 		<div class="header-container box-width">
 			<div class="main-menu">
 					<ul>
-						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
-						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>"><?php _e('blog', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank"><?php _e('training projects', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>"><?php _e('contactame', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/about-me'); ?>"><?php _e('about me', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/projects'); ?>"><?php _e('my projects', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>"><?php _e('contact me', 'gisehaag'); ?></a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
