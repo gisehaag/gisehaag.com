@@ -1,5 +1,5 @@
 <div class="box-sidebar">
-	<?php if (is_page('contact')) : ?>
+	<?php if (is_page('contactame')) : ?>
 
 		<?php if (is_active_sidebar('contact-sidebar')) { ?>
 			<ul class="sidebar-wrapper" id="sidebar">

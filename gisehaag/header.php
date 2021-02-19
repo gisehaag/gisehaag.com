@@ -24,8 +24,8 @@
 					<ul>
 						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
 						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>"><?php _e('blog', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank"><?php _e('training projects', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>"><?php _e('contactame', 'gisehaag'); ?></a></li>
+						<!-- <li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank"><?php _e('training projects', 'gisehaag'); ?></a></li> -->
+						<li><a class="uppercase-text" href="<?php echo home_url('/contactame'); ?>"><?php _e('contactame', 'gisehaag'); ?></a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
