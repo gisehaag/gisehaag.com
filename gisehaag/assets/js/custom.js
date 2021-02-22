@@ -98,7 +98,7 @@ function displayDetails(event) {
 			setTimeout(() => {
 				projectBox.removeChild(infoBox);
 				moreInfoButton.classList.remove('hidden');
-			}, 1200);
+			}, 500);
 		});
 	}
 }
