@@ -34,6 +34,7 @@
 					<li><a href="https://www.instagram.com/gise_h/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/gisela-haag-a0504330/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 					<li><a href="https://github.com/gisehaag" target="_blank"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://twitter.com/gisehaag" target="_blank"><i class="icon-twitter"></i></a></li>
 				</ul>
 			</div>
 		</div>
