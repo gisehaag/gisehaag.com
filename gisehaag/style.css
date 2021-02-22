@@ -128,8 +128,6 @@ li {
 .main-img {
 	display: none;
 	padding: 15px;
-	/* imagen anterior https://images.unsplash.com/photo-1586264511771-da5e40b3bba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 */
-	/* imagen anterior 2 https://images.unsplash.com/photo-1536443527011-81700919d4c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80 */
 }
 
 .main-img img {
@@ -407,25 +405,6 @@ li {
 	outline-color: #c9a16e;
 }
 
-.page-template-dark .wpcf7 form {
-	width: 80vh;
-	margin: 0 auto;
-}
-
-.page-template-dark .contact-input {
-	color: #c1c1c1;
-	font-family: 'Livvic', sans-serif;
-	border-bottom: 2px solid #ff3788;
-	background-color: #000;
-	font-size: 1em;
-	font-style: normal;
-}
-
-.page-template-dark .contact-input:focus {
-	outline-width: 0.5px;
-	outline-color: #e5055f;
-}
-
 input[type='submit' i] {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
@@ -441,14 +420,6 @@ input[type='submit' i] {
 
 input[type='submit' i]:focus {
 	outline-color: transparent;
-}
-
-.page-template-dark input[type='submit' i] {
-	font-family: 'Livvic', sans-serif;
-	background-color: #ff3788;
-	color: #fff;
-	font-style: normal;
-	width: 20%;
 }
 
 [class^='wpcf7-not'],
@@ -486,6 +457,8 @@ input[type='submit' i]:focus {
 	transform: scaleX(-1);
 }
 
+/* ----- Dark template ----- */
+
 .page-template-dark {
 	margin: 0;
 	background-color: #000;
@@ -521,6 +494,11 @@ input[type='submit' i]:focus {
 	margin: 0 auto;
 }
 
+.pink-text {
+	color: #ff3788;
+	font-size: 1.1em;
+}
+
 .page-template-dark .pink-wrapper h1 {
 	margin: 0;
 	font-size: 4em;
@@ -535,11 +513,6 @@ input[type='submit' i]:focus {
 }
 
 .page-template-dark .projects {
-	/* column-count: 3; */
-	/* column-gap: 40px; */
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -566,15 +539,19 @@ input[type='submit' i]:focus {
 }
 
 .page-template-dark .project-item {
-	/* background-color: #fd5298; */
 	display: inline-block;
 	position: relative;
 	width: 30%;
 	margin-bottom: 40px;
-	/* overflow: hidden; */
 	border: 4px solid #000;
 	display: flex;
 	flex-direction: column;
+	width: calc((100% - 6%) / 3);
+    margin-right: 3%;
+}
+
+.page-template-dark .project-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .page-template-dark .project-item a {
@@ -603,9 +580,6 @@ input[type='submit' i]:focus {
 	padding-right: 10px;
 }
 
-.page-template-dark .footer-content {
-	color: #fff;
-}
 
 .page-template-dark .project-img {
 	display: block;
@@ -617,13 +591,12 @@ input[type='submit' i]:focus {
 .more-info {
 	background-color: #fff;
 	text-align: left;
-	color: #204969;
+	color: #5b5b5b;
 	font-size: 0.8em;
 	z-index: 0;
 	max-height: 0;
 	overflow: hidden;
 	transition: all 0.6s ease;
-
 	position: absolute;
 	top: 100%;
 	width: 100%;
@@ -631,7 +604,7 @@ input[type='submit' i]:focus {
 }
 
 .more-info .wrapper {
-	border-top: 1px solid #a1dd70;
+	border-top: 1px solid #fe84b6;
 	padding: 10px 20px;
 }
 
@@ -640,8 +613,8 @@ input[type='submit' i]:focus {
 	margin: 10px 0 5px;
 	padding: 2px 10px;
 	border-radius: 5px;
-	background-color: rgba(161, 221, 112, 0.5);
-	border: 0.5px solid #a1dd70;
+	background-color: rgba(254, 132, 182, 0.5);
+	border: 0.5px solid rgb(254, 132, 182);
 }
 
 .tech-icon {
@@ -652,12 +625,17 @@ input[type='submit' i]:focus {
 }
 
 .inspiration-link {
-	color: #204969;
-	text-decoration: underline;
+	color: #5b5b5b;
+	font-style: italic;
 }
 
-.visible {
+.inspiration-link:hover {
+	color: #fe84b6;
+}
+
+.more-info.visible {
 	max-height: 400px;
+	box-shadow: 0 0 40px black;
 }
 
 .hidden {
@@ -699,6 +677,37 @@ input[type='submit' i]:focus {
 	list-style: disc;
 }
 
+.page-template-dark .wpcf7 form {
+	width: 80vh;
+	margin: 0 auto;
+}
+
+.page-template-dark .contact-input {
+	color: #fff;
+	font-family: 'Livvic', sans-serif;
+	border-bottom: 2px solid #ff3788;
+	background-color: #000;
+	font-size: 1em;
+	font-style: normal;
+}
+
+.page-template-dark .contact-input:focus {
+	outline: .5px solid #fe84b6;
+	outline-offset: -2px;
+}
+
+.page-template-dark .contact-input::placeholder {
+	color: #c1c1c1;
+}
+
+.page-template-dark input[type='submit' i] {
+	font-family: 'Livvic', sans-serif;
+	background-color: #ff3788;
+	color: #fff;
+	font-style: normal;
+	width: 20%;
+}
+
 .page-template-dark .social .background {
 	background-color: #000;
 	margin-bottom: 50px;
@@ -724,6 +733,10 @@ input[type='submit' i]:focus {
 	font-size: 1.7rem;
 	line-height: 4em;
 	color: #fff;
+}
+
+.page-template-dark .social a:hover {
+	color: #fe84b6;
 }
 
 .page-template-dark .social span {
@@ -780,6 +793,10 @@ input[type='submit' i]:focus {
 .info-about-me > .wp-block-group__inner-container .wp-block-group {
 	width: 100%;
    padding: 0 20px;
+}
+
+.page-template-dark .footer-content {
+	color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -921,15 +938,17 @@ input[type='submit' i]:focus {
 	.info-about-me > .wp-block-group__inner-container {
 		flex-direction: column-reverse;
 		width: 90vw;
-		margin: 0 10% 30px;
+		margin: 0 auto;
 	}
 
 	.info-about-me > .wp-block-group__inner-container .wp-block-group {
-		width: 95vw;
+		width: 100%;
+		padding: 0 10px;
+		margin-bottom: 30px;
 	}
 
 	.info-about-me > .wp-block-group__inner-container figure {
-		width: 40vw;
+		width: 40%;
 		margin: 0 auto;
 	}
 
