@@ -7,5 +7,5 @@
 
 locate_template( 'inc/theme-setup.php', true );
 locate_template( 'inc/shortcodes.php', true );
-locate_template('inc/sidebars.php', true);
-locate_template('inc/blocks.php', true);
+locate_template( 'inc/sidebars.php', true );
+locate_template( 'inc/blocks.php', true );
