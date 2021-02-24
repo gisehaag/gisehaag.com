@@ -21,8 +21,9 @@ function gh_assets() {
 	wp_register_style( 'charmonman', 'https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap', '1.0', 'all' );
 
 	wp_register_style( 'fontawsome', 'https://use.fontawesome.com/releases/v5.15.1/css/all.css', '5.15.1', 'all' );
+	wp_register_style( 'icons', 'https://test.gisehaag.com/assets/css/icons.css', '1.0', 'all' );
 
-	wp_enqueue_style( 'estilos', get_stylesheet_uri(), array( 'lato', 'monserrat', 'charmonman', 'fontawsome' ), '1.0', 'all' );
+	wp_enqueue_style( 'estilos', get_stylesheet_uri(), array( 'lato', 'monserrat', 'charmonman', 'fontawsome', 'icons' ), '1.0', 'all' );
 
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', '', '1.0', true );
 

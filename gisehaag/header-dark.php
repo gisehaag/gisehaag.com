@@ -8,8 +8,6 @@
 	<meta property="og:description" content="<?php echo get_bloginfo('description') ?>" />
 	<meta property="og:image" content="<?php echo get_stylesheet_directory_uri() . '/screenshot.png' ; ?>" />
 
-	<link rel="stylesheet" href="https://test.gisehaag.com/assets/css/icons.css" />
-
 	<?php wp_head(); ?>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,9 +26,9 @@
 		<div class="header-container box-width">
 			<div class="main-menu">
 					<ul>
-						<li><a class="uppercase-text" href="<?php echo home_url('/about-me'); ?>"><?php _e('about me', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/projects'); ?>"><?php _e('my projects', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/contact'); ?>"><?php _e('contact me', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/about-me' ); ?>"><?php _e( 'about me', 'gisehaag' ); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/projects' ); ?>"><?php _e( 'my projects', 'gisehaag' ); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/contact' ); ?>"><?php _e( 'contact me', 'gisehaag' ); ?></a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
