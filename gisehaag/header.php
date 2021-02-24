@@ -3,7 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<?php wp_head(); ?>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P8TG4WVFS4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-P8TG4WVFS4');
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -11,9 +22,10 @@
 		<div class="header-container box-width">
 			<div class="main-menu">
 					<ul>
-						<li><a class="uppercase-text" href="<?php echo home_url( '/blog' ); ?>">blog</a></li>
-						<li><a class="uppercase-text" href="http://projects.gisehaag.com/" target="_blank">training projects</a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url( '/contact' ); ?>">contactame</a></li>
+						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
+						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>"><?php _e('blog', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/projects'); ?>" target="_blank"><?php _e('portfolio', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url('/contactame'); ?>"><?php _e('contactame', 'gisehaag'); ?></a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
@@ -29,8 +41,8 @@
 	<section>
 		<a href="<?php echo home_url(); ?>">
 			<div class="site-title">
-				<h1 class="title-logo">gisehaag</h1>
-				<p class="subtitle-logo uppercase-text">__un subtitulo muy copado va acá__</p>
+				<h1 class="title-logo"><?php _e('gisehaag', 'gisehaag'); ?></h1>
+				<p class="subtitle-logo uppercase-text"><?php _e('__un subtitulo muy copado va acá__', 'gisehaag'); ?></p>
 			</div>
 		</a>
 		<div class="box-width img-bgc">
@@ -46,20 +58,20 @@
 				<a class="link-box" href="<?php echo home_url( '/blog' ); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/09/20/02/03/sunglasses-947892_1280.jpg" alt="">
-						<h2 class="uppercase-text">blog</h2>
+						<h2 class="uppercase-text"><?php _e('blog', 'gisehaag'); ?></h2>
 					</div>
 				</a>
 
-				<a class="link-box" href="https://projects.gisehaag.com/" target="_blank">
+				<a class="link-box" href="<?php echo home_url('projects'); ?>" target="_blank">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2017/02/15/16/16/converse-2069209_1280.jpg" alt="">
-						<h2 class="uppercase-text">training projects</h2>
+						<h2 class="uppercase-text"><?php _e('portfolio', 'gisehaag'); ?></h2>
 					</div>
 				</a>
 				<a class="link-box" href="<?php echo home_url( '/contact' ); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/04/24/18/04/stamps-738059_1280.jpg" alt="">
-						<h2 class="uppercase-text">contactame</h2>
+						<h2 class="uppercase-text"><?php _e('contactame', 'gisehaag'); ?></h2>
 					</div>
 				</a>
 			</div>

@@ -25,6 +25,10 @@ function gh_assets() {
 	wp_enqueue_style( 'estilos', get_stylesheet_uri(), array( 'lato', 'monserrat', 'charmonman', 'fontawsome' ), '1.0', 'all' );
 
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', '', '1.0', true );
+
+	wp_localize_script('custom', 'projectsData', array(
+      'ajaxurl' => admin_url('admin-ajax.php'),
+   ));
 }
 
 add_action( 'wp_enqueue_scripts', 'gh_assets' );
@@ -51,3 +55,55 @@ function gh_add_body_class_if_mobile( $classes ) {
 }
 
 add_filter( 'body_class', 'gh_add_body_class_if_mobile' );
+
+function gh_getProjects() {
+	$args = array(
+		'post_type'      => 'project-item',
+		'posts_per_page' => -1,
+		'order'          => 'ASC',
+		'order_by'       => 'date',
+	);
+
+	$projects = new WP_Query($args);
+
+	$return = [];
+
+	if( $projects->have_posts() ) {
+		while ( $projects->have_posts() ) {
+			$projects->the_post();
+			global $post;
+
+			$return['projects'][$post->post_name] = array(
+				'title' => get_the_title(),
+				'image' => get_field('image'),
+				'date' => get_field('date'),
+				'technology' => get_field('technologies'),
+				'inspirationTitle' => get_field('inspiration_title'),
+				'inspirationURL' => get_field('inspiration_link'),
+				'description' => get_field('description'),
+				'url'=> get_field('url'),
+			);
+		}
+	}
+
+	$techs = get_terms(array(
+		'taxonomy' => 'technologies',
+	));
+
+	foreach($techs as $key => $tech) {
+		$tech->color = get_field('color', $tech);
+		$tech->svg = get_field('image', $tech);
+
+		$techs[$tech->slug] = $tech;
+		unset($techs[$key]);
+	}
+
+	$return['technologies'] = $techs;
+
+	wp_send_json($return);
+}
+
+add_action('wp_ajax_nopriv_gh_getProjects', 'gh_getProjects');
+add_action('wp_ajax_gh_getProjects', 'gh_getProjects');
+
+
