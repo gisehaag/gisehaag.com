@@ -23,9 +23,9 @@
 			<div class="main-menu">
 					<ul>
 						<!-- <li><a class="uppercase-text" href="#">home</a></li> -->
-						<li><a class="uppercase-text" href="<?php echo home_url('/blog'); ?>"><?php _e('blog', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/projects'); ?>" target="_blank"><?php _e('portfolio', 'gisehaag'); ?></a></li>
-						<li><a class="uppercase-text" href="<?php echo home_url('/contactame'); ?>"><?php _e('contactame', 'gisehaag'); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/blog' ); ?>"><?php _e( 'blog', 'gisehaag' ); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/projects' ); ?>" target="_blank"><?php _e( 'portfolio', 'gisehaag' ); ?></a></li>
+						<li><a class="uppercase-text" href="<?php echo home_url( '/contactame' ); ?>"><?php _e( 'contactame', 'gisehaag' ); ?></a></li>
 					</ul>
 			</div>
 			<div class="social-menu">
@@ -41,8 +41,8 @@
 	<section>
 		<a href="<?php echo home_url(); ?>">
 			<div class="site-title">
-				<h1 class="title-logo"><?php _e('gisehaag', 'gisehaag'); ?></h1>
-				<p class="subtitle-logo uppercase-text"><?php _e('__un subtitulo muy copado va acá__', 'gisehaag'); ?></p>
+				<h1 class="title-logo"><?php _e( 'gisehaag', 'gisehaag' ); ?></h1>
+				<p class="subtitle-logo uppercase-text"><?php _e( '__un subtitulo muy copado va acá__', 'gisehaag' ); ?></p>
 			</div>
 		</a>
 		<div class="box-width img-bgc">
@@ -58,20 +58,20 @@
 				<a class="link-box" href="<?php echo home_url( '/blog' ); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/09/20/02/03/sunglasses-947892_1280.jpg" alt="">
-						<h2 class="uppercase-text"><?php _e('blog', 'gisehaag'); ?></h2>
+						<h2 class="uppercase-text"><?php _e( 'blog', 'gisehaag' ); ?></h2>
 					</div>
 				</a>
 
-				<a class="link-box" href="<?php echo home_url('projects'); ?>" target="_blank">
+				<a class="link-box" href="<?php echo home_url( 'projects' ); ?>" target="_blank">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2017/02/15/16/16/converse-2069209_1280.jpg" alt="">
-						<h2 class="uppercase-text"><?php _e('portfolio', 'gisehaag'); ?></h2>
+						<h2 class="uppercase-text"><?php _e( 'portfolio', 'gisehaag' ); ?></h2>
 					</div>
 				</a>
 				<a class="link-box" href="<?php echo home_url( '/contact' ); ?>">
 					<div class="box-image">
 						<img src="https://cdn.pixabay.com/photo/2015/04/24/18/04/stamps-738059_1280.jpg" alt="">
-						<h2 class="uppercase-text"><?php _e('contactame', 'gisehaag'); ?></h2>
+						<h2 class="uppercase-text"><?php _e( 'contactame', 'gisehaag' ); ?></h2>
 					</div>
 				</a>
 			</div>

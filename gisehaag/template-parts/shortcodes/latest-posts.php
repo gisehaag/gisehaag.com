@@ -8,11 +8,9 @@ $args = array(
 );
 
 $query = new WP_Query( $args );
-?>
 
-<?php if ( $query->have_posts() ) : ?>
-	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-		<?php get_template_part( 'template-parts/main-loop' ); ?>
-	<?php endwhile; wp_reset_postdata(); ?>
-	<?php
-endif;
+if ( $query->have_posts() ) {
+	while ( $query->have_posts() ) { $query->the_post();
+		get_template_part( 'template-parts/main-loop' );
+	} wp_reset_postdata();
+}
