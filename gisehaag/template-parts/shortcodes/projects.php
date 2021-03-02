@@ -2,8 +2,9 @@
 $args = array(
 	'post_type'      => 'project-item',
 	'posts_per_page' => -1,
-	'order'          => 'ASC',
-	'order_by'       => 'date',
+	'orderby'			=> 'menu_order',
+	'order'          => 'DESC',
+	// 'order_by'       => 'date',
 
 );
 
@@ -21,7 +22,7 @@ $projects = new WP_Query($args); ?>
 							alt="<?php echo get_field('image_alt'); ?>"
 						/>
 					</a>
-					<h1 class="project-title"> <span class="icon-chevron-down"></span> <?php the_title(); ?></h1>
+					<h1 class="project-title"> <span></span> <span class="icon-chevron-down"></span> <?php the_title(); ?></h1>
 					<div class="details-project"></div>
 				</div>
 			<?php endwhile; ?>
