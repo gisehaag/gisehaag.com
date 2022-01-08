@@ -10,11 +10,21 @@
 	</h1>
 
 	<p class="post-meta">
-		<span><i class="fas fa-user"></i> <?php the_author(); ?> </span><span id="separator">/</span><span><i class="fas fa-calendar-day"></i><?php echo get_the_date(); ?></span>
+		<span><i class="fas fa-user"></i> <?php the_author(); ?> </span>
+		<span id="separator">/</span>
+		<span><i class="fas fa-calendar-day"></i><?php echo get_the_date(); ?></span>
 	</p>
 
 	<a href="<?php echo get_the_permalink(); ?>" class="post-thumbnail">
-		<?php the_post_thumbnail( 'large', array( 'class' => 'post-image', 'alt'   => get_the_title(), ) ); ?>
+		<?php
+		the_post_thumbnail(
+			'large',
+			array(
+				'class' => 'post-image',
+				'alt'   => get_the_title(),
+			)
+		);
+		?>
 	</a>
 
 	<div class="post-content">
