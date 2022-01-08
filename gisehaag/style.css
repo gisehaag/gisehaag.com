@@ -812,6 +812,10 @@ input[type='submit' i]:focus {
 		margin: 50px 0;
 	}
 
+	.link-box {
+		width: 90vw;
+	}
+
 	.link-box:not(:last-child) {
 		margin-right: 15px;
 	}
